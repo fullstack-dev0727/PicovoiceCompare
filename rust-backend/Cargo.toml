@@ -1,0 +1,26 @@
+[package]
+name = "ud-sync"
+version = "0.1.0"
+edition = "2018"
+publish = false
+
+[dependencies]
+futures = "0.3"
+hound = "3.4.0"
+itertools = "0.10.1"
+pv_leopard = "*"
+pv_cheetah = "*"
+axum = { version = "0.4.2", features = ["ws", "headers","multipart"] }
+hyper = { version = "0.14.14", features = ["full"] }
+tokio = { version = "1.0", features = ["full"] }
+tokio-util = { version = "0.7", features = ["io"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+tower-http = { version = "0.1", features = ["fs", "trace", "set-header",'cors'] }
+tower = "0.4.10"
+http = "0.2.5"
+headers = "0.3.5"
+askama = "0.11"
+async-trait = "0.1.51"
+async-stream = "0.3.2"
+clap = "2.33.2"
